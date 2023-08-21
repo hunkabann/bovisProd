@@ -75,7 +75,7 @@ export class SummaryComponent implements OnInit {
           timesheet,
           participacion: this.proyectos.map((proyecto, index) => {
 
-            const key = timesheet.proyectos.findIndex(({idProyecto}: {idProyecto: number}) => idProyecto === proyecto.id)
+            const key = timesheet.proyectos.findIndex(({idProyecto}) => idProyecto === proyecto.id)
             let dedicacion = 0
             if(key >= 0) {
               // console.log(timesheet.proyectos[key].tDedicacion)
