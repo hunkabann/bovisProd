@@ -4,7 +4,6 @@ import { MessageService } from 'primeng/api';
 import { TimesheetService } from '../../services/timesheet.service';
 import { SharedService } from 'src/app/shared/services/shared.service';
 import { finalize } from 'rxjs';
-import { Timesheet } from '../../models/timesheet.model';
 import * as XLSX from 'xlsx';
 
 import * as ExcelJS from 'exceljs';
@@ -12,6 +11,7 @@ import { saveAs } from 'file-saver';
 
 import { EXCEL_EXTENSION, PERCENTAGE_FORMAT } from 'src/utils/constants';
 import { es } from 'date-fns/locale';
+import { Timesheet } from '../../models/timesheet.model';
 
 interface ProyectoShort {
   id:           number,
