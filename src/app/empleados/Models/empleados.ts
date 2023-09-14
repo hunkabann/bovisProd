@@ -94,7 +94,7 @@ export class CatEmpleado {
   urlRepositorio: string = '';
   salario: number = null;
   profesion: string = '';
-  antiguedad: number = null;
+  antiguedad: string = null;
   turno: string = 'M';
   unidadMedica: number = null;
   registroPatronal: string = '';
@@ -318,7 +318,7 @@ export interface UpEmpleado {
   nusalario:                number;
   nukidprofesion:           number;
   chprofesion:              string;
-  nuantiguedad:             number;
+  nuantiguedad:             string;
   nukidturno:               number;
   chturno:                  string;
   nuunidad_medica:          number;
